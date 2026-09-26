@@ -1,0 +1,11 @@
+{
+  "openrouter_api_key": "",
+  "google_client_id": "",
+  "github_client_id": "",
+  "github_client_secret": "",
+  "public_base_url": "",
+  "supabase_url": "",
+  "supabase_service_role_key": "",
+  "supabase_state_table": "phantom_state",
+  "supabase_media_bucket": "phantom-media"
+}

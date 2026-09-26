@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: phantom-ai-platform
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "8080"
+      - key: PHANTOM_PUBLIC_URL
+        sync: false
+      - key: PHANTOM_ENCRYPTION_KEY
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GITHUB_CLIENT_ID
+        sync: false
+      - key: GITHUB_CLIENT_SECRET
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_STATE_TABLE
+        value: phantom_state
+      - key: SUPABASE_MEDIA_BUCKET
+        value: phantom-media
