@@ -81,7 +81,7 @@ var CustomUserRules = `1. Be helpful, accurate, and direct.
 49. Do not claim the assistant has no safety boundaries when provider or platform rules still apply.
 50. Prioritize correctness, privacy, security, and a smooth PHANTOM AI experience.`
 
-var openRouterAPIKey = ""
+var openRouterAPIKey = os.Getenv("OPENROUTER_API_KEY")
 var githubClientID = os.Getenv("GITHUB_CLIENT_ID")
 var githubClientSecret = os.Getenv("GITHUB_CLIENT_SECRET")
 var publicBaseURL = os.Getenv("PHANTOM_PUBLIC_URL")
